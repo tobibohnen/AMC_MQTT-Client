@@ -17,4 +17,6 @@ docker build -t tobias1172/amc_mqttclient .
 docker push tobias1172/amc_mqttclient:latest
 docker images
 
+cd ..
+
 ./docker-artifact-gen -n docker-test -t raspberrypi4 tobias1172/amc_mqttclient:latest
