@@ -3,7 +3,7 @@
 rm -f build/Dockerfile
 mkdir build
 cp app.py build/.
-cd docker-artifact.mender build/.
+cp docker-artifact.mender build/.
 
 echo "FROM python:3.7-slim-buster" >> build/Dockerfile
 echo "RUN pip install paho-mqtt" >> build/Dockerfile
