@@ -1,1 +1,26 @@
+Mender artifact:
+  Name: docker-test
+  Format: mender
+  Version: 3
+  Signature: no signature
+  Compatible devices: '[raspberrypi4]'
+  Provides group: 
+  Depends on one of artifact(s): []
+  Depends on one of group(s): []
+  State scripts:
 
+Updates:
+    0:
+    Type:   docker
+    Provides:
+	rootfs-image.docker.version: docker-test
+    Depends: Nothing
+    Clears Provides: ["rootfs-image.docker.*"]
+    Metadata:
+	{
+	  "containers": [
+	    "tobias1172/amc_mqttclient@sha256:3e09ddeaa1af602811ce0777db591ffedb8e0d53cfa5eb346bd3a8973cc50c32"
+	  ],
+	  "run_args": ""
+	}
+    Files: None
