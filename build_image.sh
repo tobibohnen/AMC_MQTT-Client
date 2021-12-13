@@ -17,4 +17,4 @@ docker build -t tobias1172/amc_mqttclient .
 docker push tobias1172/amc_mqttclient:latest
 docker images
 
-tar cfv docker-artifact.tar /build/docker-artifact.mender
+tar cfv docker-artifact.tar docker-artifact.mender
