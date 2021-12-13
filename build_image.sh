@@ -19,4 +19,7 @@ docker images
 
 cd ..
 
+chmod +x mender-artifact
+cp mender-artifact /usr/local/bin/
+
 bash ./docker-artifact-gen -n docker-test -t raspberrypi4 tobias1172/amc_mqttclient:latest
