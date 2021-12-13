@@ -18,5 +18,5 @@ docker push tobias1172/amc_mqttclient:latest
 docker images
 
 cd ..
---chmod=+x docker-artifact-gen
-./docker-artifact-gen -n docker-test -t raspberrypi4 tobias1172/amc_mqttclient:latest
+
+bash ./docker-artifact-gen -n docker-test -t raspberrypi4 tobias1172/amc_mqttclient:latest
