@@ -11,17 +11,7 @@ echo "COPY app.py /app.py" >> build/Dockerfile
 echo "CMD python3 app.py" >> build/Dockerfile
 
 cd build
-docker stop tobias1172/amc_mqttclient
 docker rm tobias1172/amc_mqttclient
 docker build -t tobias1172/amc_mqttclient .
 docker push tobias1172/amc_mqttclient:latest
-docker images
 
-cd ..
-
-chmod +x mender-artifact
-cp mender-artifact /usr/local/bin/
-
-apt-get install jq
-
-bash ./docker-artifact-gen -n docker-test -t raspberrypi4 tobias1172/amc_mqttclient:latest
