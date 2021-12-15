@@ -1,3 +1,3 @@
 run = True
 while run:
-    print("hello")
+    print("amc test")
