@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM python:3.7-slim-buster
+FROM arm32v7/python
 
 # install dependencies
 RUN pip install paho-mqtt
