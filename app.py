@@ -53,6 +53,8 @@ client.connect(arg_results.mqtthost, arg_results.mqttport, 60)
 print("Initialized. Tunneling traffic now.")
 client.loop_start()
 
+print("hello")
+
 run = True
 while run:
     fullTopic = topic
