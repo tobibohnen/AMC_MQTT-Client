@@ -7,7 +7,12 @@ cp docker-artifact.mender build/.
 
 echo "FROM --platform=linux/arm/v7 arm32v7/python:latest" >> build/Dockerfile
 
-echo "RUN pip install paho-mqtt" >> build/Dockerfile
+echo "apk update" >> build/Dockerfile
+echo "apk upgrade" >> build/Dockerfile
+
+echo "apk add mosquitto" >> build/Dockerfile
+echo "apk add mosquitto-clients" >> build/Dockerfile
+
 echo "COPY app.py /app.py" >> build/Dockerfile
 echo "CMD python3 app.py" >> build/Dockerfile
 
