@@ -13,6 +13,8 @@ echo "CMD apk upgrade" >> build/Dockerfile
 echo "CMD apk add mosquitto" >> build/Dockerfile
 echo "CMD apk add mosquitto-clients" >> build/Dockerfile
 
+echo "CMD pip install paho-mqtt" >> build/Dockerfile
+
 echo "COPY app.py /app.py" >> build/Dockerfile
 echo "CMD python3 app.py" >> build/Dockerfile
 
