@@ -1,1 +1,1 @@
-# AMC_MQTT-Client
+# AMC_Mender_Pipeline
