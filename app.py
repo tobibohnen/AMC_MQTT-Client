@@ -1,2 +1,2 @@
 while True:
-    print("AMC Container after update")
+    print("AMC Container before update")
